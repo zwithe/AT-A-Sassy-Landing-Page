@@ -1,15 +1,15 @@
-@function set-text-color($color) {
+@function text-color-picker($color) {
   @if(lightness($color) > 70) {
-    @return #333;
+    @return black;
   } @else {
-    @return #fff;
+    @return white;
   }
 }
 
-// Set background & text color
-@mixin set-background($color) {
+
+@mixin set-bg($color) {
   background-color: $color;
-  color: set-text-color($color)
+  color: text-color-picker($color)
 }
 
 
@@ -19,3 +19,7 @@
   margin: 0 auto;
   overflow: auto;
 }
+
+
+
+

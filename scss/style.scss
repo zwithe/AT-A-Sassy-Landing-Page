@@ -16,8 +16,7 @@ body {
 }
 
 img {
-  width: 95%;
-  height: 80%;
+  border-radius: 50%;
 }
 
 a {
@@ -25,7 +24,7 @@ a {
 }
 
 .hero {
-  @include set-background($primary-color);
+  @include set-bg($primary-color);
   height: 600px;
 
   nav {
@@ -43,7 +42,7 @@ a {
     }
 
     a {
-      color: set-text-color($primary-color);
+      color: text-color-picker($primary-color);
     }
 
     a:hover {
@@ -72,6 +71,8 @@ a {
 // _utilities.scss
 
 
+ 
+
 
 // Margin & padding classes
 $spaceamounts: (1,2,3,4,5);
@@ -91,6 +92,3 @@ $spaceamounts: (1,2,3,4,5);
     padding: #{$space}rem 0;
   }
 }
-
-
-
