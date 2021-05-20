@@ -1,3 +1,8 @@
+// @forward "utilities";
+@import "utilities";
+@import "config";
+
+
 %btn {
   display: inline-block;
   border-radius: 5px;
